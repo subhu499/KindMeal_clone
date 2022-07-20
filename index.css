@@ -1,0 +1,318 @@
+#navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+button {
+    background-color: white;
+    border: 0px solid white;
+}
+#logo {
+    margin-left: 120px;
+    
+}
+.fb {
+    padding: 0px 10px 0px 10px;
+    background-color: rgba(0, 0, 199, 0.89);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.email {
+    padding: 0px 10px 0px 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gray;
+    font-size: 18px;
+    border-radius: 5px;
+   
+}
+#navbar>div:nth-of-type(1)>div:nth-child(3) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+  }
+  
+  #navbar>div > {
+    display: flex;
+    gap: 10px;
+ 
+  }
+  
+  #navbar>div:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 80%;
+    margin: auto;
+    justify-content: center;
+  }
+  
+#social > img{
+    width: 10%;
+}
+
+#login {
+    padding: 30px;
+    margin-right: 70px;
+
+}
+
+
+
+
+
+ /* --------------------------navbar   Css --------------------------------------------------------------------- */
+
+ #navitems {
+    background-color: rgb(57, 156, 57);
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+ #navitems > div > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+ }
+/* -------------------------------banner------------------------------------------ */
+
+#banner >img  {
+         height: 300px;
+         width: 580px;
+         margin-left: 50px;
+        
+}
+
+#banner1  {
+    width: auto;
+    height: 150px;
+    margin: auto;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+
+}
+
+#banner1 > img{
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+   
+}
+
+  /* =-------------------------- navbar Item ------------------------------------- */
+
+  #box {
+    width: 1050px;
+    box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 5px 5px 5px 5px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  #newsh {
+     height: 50px;
+     width: 1000px;
+     display: flex;
+     justify-content: space-evenly;
+     font-family: 'Times New Roman', Times, serif;   
+     margin: auto;
+     
+  }
+
+#banner2  {
+    width: 1000px;
+    height: 300px ;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin: auto;
+
+}
+
+#banner2  > div > img{
+    width: 100%;
+    height: 200px ;
+    border-radius: 5px;
+   
+}
+
+#banner2  > div > p{
+    color: grey;
+    text-align: center;
+}
+
+/* ------------------------xxxxxxxxx--------------------------------------xxxxxxxxxx-------------------- */
+
+
+#mid > h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(61, 58, 58);
+}
+#mid11 {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: grey;
+    gap: 50px;
+}
+
+#mid11 > img {
+   width: 25%;
+   height: 25%;
+}
+
+#mid > h2 {
+    padding: 30px;
+    text-align: center;
+    color: grey;
+    font-size: 30px;
+}
+/* 
+------------------xxxxxxxxxxx-----------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxx- */
+
+
+       #box2 {
+        gap: 20px;
+        width: 85%;
+        height: 300px;
+        margin: auto;
+        
+        
+       }
+       #box2 > div {
+        
+
+        box-shadow: rgba(100,100,111,0.2) 0px 5px 15px;
+        text-align: center;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        gap: 22px;
+        color: grey;
+        
+       }
+
+           
+      .A1  {
+       height: 100%;
+       width: 100%;
+       text-align: center;
+       border-radius: 10px;
+       box-shadow: rgba(0.5, 0.5, 0.3, 0.3) 5px 5px 5px 5px;
+      
+      }
+
+       
+
+
+
+/* ---------------------------------xxxxxxxxxxxxxxxxxxxxxxxx-------------------xxxxxxxxxxxxxxxxxxxxxxxx-------- */
+
+#restaurant {
+    margin-top: 180px;
+    text-align: center;
+    font-size: 22px;
+   margin-left: 20px;
+   margin-right: 20px;
+   color: gray;
+}
+
+/* ---------------------button---------------xxx-------------------------------- */
+
+  #box3 {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+   
+   .A2{
+    border-radius: 15px;
+    width: 400px;
+    height: 120px;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+   }
+
+    .A3 {
+      font-size: 15px;
+    }
+
+/* ----------------------------xxxxxxxx ----------------box4------------- */
+
+#box4 {
+
+  text-align: center;
+  color: gray;
+  margin: auto;
+}
+
+#box5 {
+  width: 100%;
+  background-color: rgb(245, 237, 237);
+
+}
+
+#box5 > img {
+
+  margin-left: 130px;
+}
+
+/* --------------------------------xxxxxxxxxxx------------------------xxxxxxxxxxxxxxxxxxxxxxxx-------- */
+/* Footer Section end  */
+#fcontainer {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(11, 54, 33, 0.74);
+  
+  }
+  
+  #scontainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #tcontainer {
+    margin-top: 40px;
+    ;
+    width: 100%;
+    height: 150px;
+  }
+  
+  #scontainer .links>div>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+   
+  }
+  
+  #scontainer .links>div {
+    margin-top: 20px;
+    padding: 0px 15px 0px 15px;
+    line-height: 2px;
+  }
+  
+  #tcontainer>div>img {
+    width: 20%;
+  
+  }
+  
+
+ /* -------------------xxxxxxxxx-=--- */
+
+ #bottom{
+  text-align: center;
+  color: rgb(255, 255, 255);
+ }
