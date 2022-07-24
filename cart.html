@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      #container > div {
+        text-align: center;
+      }
+      p + img {
+        width: 35%;
+      }
+
+      button {
+        background-color: brown;
+        padding: 10 px 10px;
+        font-size: 12px;
+        font-weight: 12px;
+        height: 30px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+
+   
+    <div id="navbar">
+      <div id="logo">
+        <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" />
+      </div>
+
+      <div id="social">
+        <img src="https://www.kindmeal.my/images/follow_blog_grey.png" alt="" />
+        <img
+          src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+          alt=""
+        />
+        <img
+          src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+          alt=""
+        />
+      </div>
+
+      <div id="login">
+        <button class="fb">Facebook</button>
+        <button class="email">Email</button>
+        <div>
+          <a href="">cart </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="navitems">
+      <div><a href="">Home</a></div>
+      <div><a href="https://www.kindmeal.my/deals.htm">Meal Deals</a></div>
+      <div><a href="">KindMoments</a></div>
+      <div><a href="">Hot Picks</a></div>
+      <div><a href="">Recipes</a></div>
+      <div><a href="">Directory</a></div>
+      <div><a href="">Articles</a></div>
+      <div><a href="">Help</a></div>
+    </div>
+
+
+
+        <select id="filter">
+          <option value="">Select Priority</option>
+          <option value="Fast Food">Fast Food</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="sweets">Sweets</option>
+        </select>
+        <input type="submit" value="Submit" />
+   
+    <div id="container"></div>
+  
+
+  </form>
+  </body>
+</html>
+
+<script>
+  let investors = [
+    {
+      name: "Pizza, Fast Food",
+      role: 199,
+      image:
+        "https://th.bing.com/th/id/OIP.48gfeVUq_W_GvutAZF6J5QHaFj?w=259&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Fast Food",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "399",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+         item: "Lunch",  
+    },
+
+    {
+      name: "Pizza, Fast Food",
+      role: "100",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Dinner",  
+      },
+         {
+      name: "Pizza, Fast Food",
+      role: 199,
+      image:
+        "https://th.bing.com/th/id/OIP.48gfeVUq_W_GvutAZF6J5QHaFj?w=259&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Fast Food",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "399",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+         item: "Lunch",  
+    },
+
+    {
+      name: "Pizza, Fast Food",
+      role: "100",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Dinner",  
+      },
+    {
+      name: "Pizza, Fast Food",
+      role: "999",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Sweets",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "999",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Sweets",  
+    },
+      {
+      name: "Pizza, Fast Food",
+      role: 199,
+      image:
+        "https://th.bing.com/th/id/OIP.48gfeVUq_W_GvutAZF6J5QHaFj?w=259&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Fast Food",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "399",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+         item: "Lunch",  
+    },
+
+    {
+      name: "Pizza, Fast Food",
+      role: "100",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Dinner",  
+      },
+    {
+      name: "Pizza, Fast Food",
+      role: "999",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Sweets",  
+    },   {
+      name: "Pizza, Fast Food",
+      role: 199,
+      image:
+        "https://th.bing.com/th/id/OIP.48gfeVUq_W_GvutAZF6J5QHaFj?w=259&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Fast Food",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "399",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+         item: "Lunch",  
+    },
+
+    {
+      name: "Pizza, Fast Food",
+      role: "100",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Dinner",  
+      },
+    {
+      name: "Pizza, Fast Food",
+      role: "999",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Sweets",  
+    },   {
+      name: "Pizza, Fast Food",
+      role: 199,
+      image:
+        "https://th.bing.com/th/id/OIP.48gfeVUq_W_GvutAZF6J5QHaFj?w=259&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Fast Food",  
+    },
+    {
+      name: "Pizza, Fast Food",
+      role: "399",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+         item: "Lunch",  
+    },
+
+    {
+      name: "Pizza, Fast Food",
+      role: "100",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Dinner",  
+      },
+    {
+      name: "Pizza, Fast Food",
+      role: "999",
+      image:
+        "https://th.bing.com/th/id/OIP.6fqEXJY6UXuEpFF23sAlFwHaF7?w=242&h=194&c=7&r=0&o=5&pid=1.7",
+      item: "Sweets",  
+    },
+   
+  ];
+
+
+   document.querySelector("form").addEventListener("submit",investors);
+   
+
+
+
+  investors.forEach(function (elem) {
+    let div = document.createElement("div");
+    let image = document.createElement("img");
+    image.setAttribute("src", elem.image);
+    let investorName = document.createElement("h3");
+    investorName.innerText = elem.name;
+    let para = document.createElement("p");
+    para.innerText = elem.role;
+
+    let item = document.createElement("p");
+      item.innerText = elem.item
+
+
+
+    let company = document.createElement("button");
+    company.innerText = "Add to cart";
+
+    div.append(image, investorName, para,item, company);
+    document.querySelector("#container").append(div);
+  });
+
+
+   
+    
+
+
+  let fill = document.querySelector("#filter");
+  fill.addEventListener("click",function(){
+    if(filter.value = "" ){
+      DisplayTable(investors)
+    } else {
+      let select = ele.item.filter(function(elem){
+        return ele.item == filter.value
+      })
+      DisplayTable(select)
+    }
+  })
+
+  //       let container = document.getElementById("container");
+  //       let filter = document.getElementById("filter");
+
+  //     // let cartLs =  JSON.parse(localStorage.getItem("cart-page")) || [];
+
+  //      function Display (product_data){
+  //         container.innerHTML = null;
+  //         product_data.forEach(function (ele) {
+  //      let product = document.createElement("div");
+  //      let img = document.createElement("img");
+  //      img.src = ele.img;
+
+  // let name = document.createElement("h1");
+  //             name.innerText = ele.brand
+
+  //  let price = document.createElement("h2");
+  //             price.innerText = ele.price
+
+  //  let catagory = document.createElement("p");
+  //          catagory.innerText = ele.catagory
+
+  //  let cart = document.createElement("button");
+  //             cart.innerText = "Add to Cart";
+  //             cart.addEventListener("click",function(){
+  //                 AddToCart (ele)
+  //             });
+
+  //      product.append(img,name,price,catagory,cart);
+  //      container.append(product);
+  //         });
+  //     }
+
+  //       Display(product_data);
+
+  //    filter.addEventListener("change", function(){
+  //     if (filter.value==="") {
+  //       Display(product_data);
+  //     } else {
+  //       let filtered = product_data.filter(function (ele){
+  //         return ele.catagory===filter.value;
+  //       });
+  //       Display(filtered)
+  //     }
+  //    });
+
+  //          function AddToCart (product){
+  //             let iscartAdded = false
+  //             for(let i=0;i<cartLs.length;i++){
+  //                 if(cartLs[i].productID===product.productID){
+  //                     alert("product already in the cart");
+  //                     iscartAdded = true;
+  //                     break;
+  //                 }
+  //             }
+  //             if(iscartAdded===false){
+  //                    cartLs.push(product);
+  //             alert("product Added Succesfully");
+  //              localStorage.setItem("cart-page",JSON.stringify(cartLs));
+  //             }
+
+  //     }
+</script>
+
+<!-- 
+<script>
+  let signinLS = JSON.parse(localStorage.getItem("signin"));
+  let nav = document.getElementById("nav");
+  if(signinLS != null ){
+    nav.innerHTML=null;
+    let userName =document.createElement("h1 ");
+    userName.innerText = signinLS.name;
+    let cartBtn = document.createElement("a");
+    cartBtn.setAttribute("href", "cart.html");
+    cartBtn.innerText = "CART";
+    nav.append(userName,cartBtn);
+  }
+</script> -->
+
