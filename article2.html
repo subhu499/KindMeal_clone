@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <style>
+      #navbar1 {
+        width: 82%;
+        height: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid red; */
+        padding: 8px 0px;
+        margin: auto;
+        /* padding-right: 15px; */
+      }
+      #navbar1 > div {
+        width: 60%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid blue; */
+      }
+      #navbar1 > div > img {
+        width: 91%;
+        /* height: 65px; */
+        margin-bottom: -8px;
+      }
+      #navbar1 > div:nth-child(2) {
+        width: 30%;
+        padding-left: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      #navbar1 > div:nth-child(2) > a > img {
+        width: 60%;
+        margin-left: 15px;
+      }
+      #navbar1 > div:nth-child(3) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      #fbBtn {
+        margin: 20px 14px 22px 8px;
+        padding: 3px 8px 1.5px 8px;
+        border-radius: 3px;
+        border: none;
+        font-size: 11px;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+      }
+      #emailBtn {
+        margin: 20px 14px 22px 0px;
+        padding: 3px 18px 2px 18px;
+        border-radius: 3px;
+        border: none;
+        font-size: 11px;
+        background-color: rgb(86, 84, 84);
+        color: white;
+        font-weight: bold;
+      }
+      #footer .insidediv > p {
+        padding: 5px;
+
+        font-size: 15px;
+        color: grey;
+      }
+      #navbar2 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        background-color: #2bb673;
+        font-size: 20px;
+      }
+      #buttons {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      #buttons > div {
+        color: white;
+        /* background-color: black; */
+        padding: 8px 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #footer {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid red; */
+        background-color: green;
+        margin-top: 10px;
+      }
+
+      #maincontainer {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .insidediv {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+      }
+      .insidediv > p {
+        margin-top: -20px;
+      }
+      #footer > p {
+        font-size: 12px;
+        color: white;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+      }
+      #footer > p + p {
+        font-size: 10px;
+        color: white;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+      }
+      #footer .insidediv > h4 {
+        padding: 5px;
+        color: white;
+      }
+
+      #upperText {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        background-color: lightgray;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      #upperText > div {
+        width: 70%;
+        height: auto;
+        margin: auto;
+      }
+      #upperText > div > h2 {
+        color: rgb(96, 96, 96);
+      }
+      #upperText > div > p {
+        font-size: 14px;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      #container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid red; */
+      }
+      #main {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      #imageDiv {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid teal; */
+      }
+      #imageDiv > img {
+        width: 100%;
+        height: 250px;
+      }
+      #textDiv {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* border: 1px solid black; */
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      #textDiv > h3 + p {
+        margin-top: -20px;
+        font-size: 12px;
+      }
+      #textDiv > p + p {
+        font-size: 13px;
+      }
+      button {
+        background-color: red;
+        padding: 5px 25px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: none;
+      }
+      button > a {
+        color: white;
+      }
+      #pages {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
+      #pages > div {
+        width: 5%;
+      }
+      #pages > div > a {
+        color: blue;
+      }
+      #pages > div {
+        padding: 10px;
+        margin: 10px;
+      }
+      #pages > div > a {
+        text-decoration: none;
+        color: #75b6f6;
+      }
+      .selected {
+        background-color: gainsboro;
+        color: black;
+      }
+      #pages > .selected > a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <div id="navbar1">
+      <div>
+        <img
+          src="https://www.kindmeal.my/images/logo-kindmeal.png"
+          alt="Error"
+        />
+      </div>
+      <div>
+        <a href="https://www.kindmeal.my/widget.htm" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_blog_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://www.facebook.com/KindMeal.my" target="_blank">
+          <img
+            src="https://www.kindmeal.my/images/follow_facebook_grey.png"
+            alt="Error"
+        /></a>
+        <a href="https://twitter.com/KindMeal" target="_blank"
+          ><img
+            src="https://www.kindmeal.my/images/follow_twitter_grey.png"
+            alt="Error"
+        /></a>
+      </div>
+      <div>
+        <p>Login</p>
+        <button id="fbBtn">Facebook</button>
+        <button id="emailBtn"><a href="email.html">Email</a></button>
+        <p><a style="color: black" href="signUpPage.html">Sign Up</a></p>
+      </div>
+    </div>
+    <div id="navbar2">
+      <div id="buttons">
+        <div>
+          <span><a href="index.html">Home</a></span>
+        </div>
+        <div><a href="mealDeals.html">Meal Deals</a></div>
+        <div><a href="kindmoments.html">KindMoments</a></div>
+        <div><a href="recipe1.html">Recipe</a></div>
+        <div><a href="directoryveg.html">Directory</a></div>
+        <div><a href="article.html">Articles</a></div>
+        <div><a href="helppage.html">Help</a></div>
+      </div>
+    </div>
+
+    <div id="upperText">
+      <div>
+        <h2>Yummy News, Articles & Videos</h2>
+        <p>
+          Want to keep updated on the latest news of delicious meat-free meals
+          and adorable animals? Check out this section for interesting daily
+          happenings and articles that will melt your tummy (and heart too).
+        </p>
+        <p>
+          You can also follow our
+          <a href="https://www.facebook.com/KindMeal.my">Facebook Page </a> or
+          <a href="https://twitter.com/KindMeal">Twitter</a> for more news and
+          updates.
+        </p>
+      </div>
+    </div>
+
+    <div id="pages">
+      <div>Page:</div>
+      <div class="selected"><a href="article.html">1</a></div>
+      <div class="selected"><a href="article1.html">2</a></div>
+      <div class="selected"><a href="article2.html">3</a></div>
+    </div>
+
+    <div id="container">
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19830-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>
+            Chill Out And Indulge In Sweet Treats At Lolla Paluza, Petaling
+            Jaya. A Cozy Des..
+          </h3>
+          <p>by KindMeal.my</p>
+          <p>
+            Chill out and indulge in sweet treats at Lolla Paluza, Petaling
+            Jaya! A cozy dessert bar and event space serving freshly baked
+            waffles and soft serve ice cream, complimented with aromatic coffees
+            and richly-flavored teas. Enjoy 10% off:
+          </p>
+          <button>View Article</button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19827-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>Happy Sheep Loves A Head Massage!</h3>
+          <p>by KindMeal.my</p>
+          <p>Miss T has booked in for a head massage today! 🐑❤️</p>
+          <button>
+            <a
+              href="https://www.facebook.com/edgarsmission/videos/1897533273970176/?t=3"
+              >View Video</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19826-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>Dr. Jane Goodall''s Message For World Oceans Day 2022</h3>
+          <p>by KindMeal.my</p>
+          <p>
+            Dr. Jane Goodall shares a message for World Oceans Day 2022.
+            ❤️🐳🐋🦈
+          </p>
+          <button>
+            <a
+              href="https://video.fdel8-1.fna.fbcdn.net/v/t42.1790-2/285749571_153299630554874_7650384589717845175_n.mp4?_nc_cat=105&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjMwMCwicmxhIjoxMjI5LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=uHk-TmxyFNIAX_nFQ7V&rl=300&vabr=137&_nc_ht=video.fdel8-1.fna&edm=AGo2L-IEAAAA&oh=00_AT8sYIAn5y__oFJmc6nNI9ICBhakaZjGkF0RMtpCKpCIlg&oe=62ACA81C"
+              >View Video</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19824-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>Baby Cow Loves Chasing His Dog Sibling</h3>
+          <p>by KindMeal.my</p>
+          <p>
+            Baby cow made his first happy sound because of this dog — and now
+            that he's 1,000 pounds, he lays down to play with him ❤️
+          </p>
+          <button>
+            <a
+              href="https://video.fdel8-1.fna.fbcdn.net/v/t42.1790-2/282256887_115505231168053_9203220245360689135_n.mp4?_nc_cat=107&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjUyNywicmxhIjoxMDYzLCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=S05SBL5C85cAX_D0Hgs&rl=527&vabr=293&_nc_ht=video.fdel8-1.fna&edm=AGo2L-IEAAAA&oh=00_AT9sfUZ4zL6EHOIdKX4HxsaVEfBMlbUr_iGzrIiAyuHtqg&oe=62ACA64D"
+              >View Video</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19823-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>Vegan ''fish'' And Chips! 🐟</h3>
+          <p>by KindMeal.my</p>
+          <p>
+            Give this vegan version of a British classic Fish and Chips a go!
+          </p>
+          <button>
+            <a
+              href="https://www.facebook.com/bosh.tv/videos/542598574197191/?t=0"
+              >View Video</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19822-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>M'sians Continue To Waste Food</h3>
+          <p>by KindMeal.my</p>
+          <p>
+            Every day, Malaysians dump 4,081 tons of edible food – enough to
+            fill one-and-a-half Olympic-sized swimming pools.
+          </p>
+          <button>
+            <a
+              href="https://www.thestar.com.my/news/nation/2022/06/06/msians-continue-to-waste-food"
+              >View Article</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19821-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>If You See This Mushroom, Don''t Touch It</h3>
+          <p>by KindMeal.my</p>
+          <p>Which is the most poisonous mushroom of a</p>
+          <button>
+            <a
+              href="https://video.fdel8-1.fna.fbcdn.net/v/t42.1790-2/10000000_770159557289627_4054836489423939679_n.mp4?_nc_cat=106&ccb=1-7&_nc_sid=985c63&efg=eyJybHIiOjUyMywicmxhIjoxNTgyLCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&_nc_ohc=zKHwzrhh5moAX_Lh4Sg&rl=523&vabr=291&_nc_ht=video.fdel8-1.fna&edm=AGo2L-IEAAAA&oh=00_AT_YeMye1lzMh21G1PSs8OMfLP6Y2v8b1uakKVd4zeK_hQ&oe=62AC9FE4"
+            >
+              View Video</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19829-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>
+            Three Things You Need To Know About Each Animal Ag Industry - Animal
+            Outlook
+          </h3>
+          <p>by Compassion Over Killing</p>
+          <p>
+            Today is World Oceans Day, a time to remind the world of the awful
+            truth that commercial fishing is decimating the ocean’s ecosystems
+            and killing massive numbers of fish. An unfortunate result of this
+            overfishing is that “non target” species like sea lions, turtles and
+            dolphins are also being caught..
+          </p>
+          <button>
+            <a
+              href="https://animaloutlook.org/three-things-you-need-to-know-about-each-animal-ag-industry/?utm_medium=Blog&utm_source=Facebook&utm_campaign=WOD"
+              >View Article</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19828-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>
+            Today Is World Oceans Day. At Animal Equality, We Protect The Oceans
+            Inhabitants..
+          </h3>
+          <p>by Animal Equality"</p>
+          <p>
+            Today is World Oceans Day. The purpose of this day is to inform the
+            public of the impact of human actions on the ocean, develop a
+            worldwide movement of citizens for the ocean, and mobilize and unite
+            the world's population on a project for the sustainable management
+            of the world's oceans. At Animal ..
+          </p>
+          <button>
+            <a
+              href="https://animalequality.org/blog/2021/08/16/our-work-to-help-fish/"
+            >
+              View Article</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="imageDiv">
+          <img
+            src="https://www.kindmeal.my/photos/article/19/19825-l.jpg"
+            alt="Error"
+          />
+        </div>
+        <div id="textDiv">
+          <h3>Animal Equality Files Lawsuit Against Foster Farms</h3>
+          <p>by Animal Equality</p>
+          <p>
+            Animal Equality is taking action against Foster Farms‼️ Animal
+            Equality, represented by Advancing Law for Animals, filed a lawsuit
+            today against Foster Farms. This lawsuit comes after an Animal
+            Equality undercover investigation inside a Foster Farms' hatchery
+            revealed chicks being crushed, drowned ..
+          </p>
+          <button>
+            <a
+              href="https://animalequality.org/news/animal-equality-foster-farms-lawsuit/?utm_campaign=220607&utm_medium=email&utm_source=newsletter&sourceid=1097186&emci=c5699ca7-9ee6-ec11-b656-281878b85110&emdi=33e8b88d-ade6-ec11-b656-281878b85110&ceid=25429421"
+              >View Article<</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer code -->
+    <footer id="footer">
+      <div id="maincontainer">
+        <div class="insidediv">
+          <h4>General</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="signUpPage.html">Sign Up</a></p>
+          <p><a href="featured.html">Restaurateurs</a></p>
+          <p><a href="index.html">AboutKindMeal.my</a></p>
+          <p><a href="helppage.html">Help & FAQ</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Features</h4>
+          <p><a href="meal_deals.html">Meat-Free Deals</a></p>
+          <p><a href="foodmenu.html">Tasty Menus</a></p>
+          <p><a href="kindmoments.html">Kind Moments</a></p>
+          <p><a href="recipe1.html">Meat-Free Recipes</a></p>
+          <p><a href="featured.html">Featured Restaurants</a></p>
+          <p><a href="directoryveg.html">Vegetarian & Vegan Directory</a></p>
+        </div>
+        <div class="insidediv">
+          <h4>Social Media</h4>
+          <p>
+            <a href="https://www.kindmeal.my/widget.htm">KindMeal Widget</a>
+          </p>
+          <p><a href="https://www.facebook.com/KindMeal.my">Facebook</a></p>
+          <p><a href="https://twitter.com/KindMeal">Twitter</a></p>
+          <p><a href="http://instagram.com/KindMeal.my">Instagram</a></p>
+        </div>
+      </div>
+      <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+      <p>
+        This website promotes compassionate, meat-free dining experience. Some
+        food may contain eggs, dairy products or alcohol, please view individual
+        listings for details.
+      </p>
+    </footer>
+  </body>
+</html>
